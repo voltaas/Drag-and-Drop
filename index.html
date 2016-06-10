@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <title> WELCOME TO THE DRAG AND DROP OF THE CONTENT </title>
+  <!-- Javascipt  -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <!-- Javascript UI -->
+  <script src="http://code.jquery.com/ui/1.8.20/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
+  <script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+ </head>
+<body>
+  <div id="header">
+      <h1>DRAG AND DROP THE PEOPLE TO USER TABLE AND PROJECT TO PROJECT TABLE</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <button class="btn btn-people">PEOPLE</button>
+      <!-- MY DROPDOWN FIRST LIST OF PEOPLE -->
+      <div id="peopleDrop">
+        <ul id="people">
+          <li id="SWAMI" style="cursor:pointer"><a href="#">SWAMI</a></li>
+          <li id="SIMON" style="cursor:pointer"><a href="#">SIMON</a></li>
+          <li id="GHANA" style="cursor:pointer"><a href="#">GHANA</a></li>
+          <li id="BABU" style="cursor:pointer"><a href="#">BABU</a></li>
+        </ul>
+      </div>
+      <!-- MY DROPDOWN1 FIRST LIST OF PROJECTS -->
+      <button class="btn btn-project">PROJECT</button>
+      <div id="projectDrop">
+        <ul id="project">
+          <li id="HTML" style="cursor:pointer"><a href="#">HTML</a></li>
+          <li id="DJANGO" style="cursor:pointer"><a href="#">DJANGO</a></li>
+          <li id="PYTHON" style="cursor:pointer"><a href="#">PYTHON</a></li>
+          <li id="LINUX" style="cursor:pointer"><a href="#">LINUX</a></li>
+        </ul>
+      </div>
+      <!-- MY UPDATES -->
+      <button class="btn btn-update">UPDATE USER</button>
+      <div id="update">
+        <ul id="user">
+          <li id="1" style="cursor:pointer"><a href="#" class="btn">1</a></li>
+          <li id="2" style="cursor:pointer"><a href="#" class="btn">2</a></li>
+          <li id="3" style="cursor:pointer"><a href="#" class="btn">3</a></li>
+          <li id="4" style="cursor:pointer"><a href="#" class="btn">4</a></li>
+        </ul>
+      </div>
+      <div id="resource">
+        <button class="btn btn-resource"> RESOURCE MANAGEMENT </button>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="col-md-6" id="dropdiv">
+        <table class="table table-bordered table-1">
+          <thead>
+            <tr>
+              <th>NAME</th>
+              <th>ROLE</th>
+              <th>EXPERIENCE</th>
+              <th>LEVEL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr> 
+              <td id="name" >&nbsp;</td><td> &nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td >&nbsp;</td><td >&nbsp;</td><td >&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6" id="dropdiv">
+        <table class="table table-bordered table-2">
+          <thead>
+            <tr>
+              <th>PROJECT</th>
+              <th>NAME</th>
+              <th>DURATION</th>
+              <th>LEVEL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="name">&nbsp;</td><td>&nbsp;</td><td >&nbsp;</td><td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6" id="dropdiv">
+      <table class="table table-bordered table-3">
+        <thead>
+          <tr>
+            <td> S.NO </td>
+            <td> FIRST NAME </td>
+            <td> LAST NAME </td>
+            <td> SHORT NAME </td>
+            <td> DEPARTMENT </td>
+            <td> REPORTING MANAGER </td>
+            <td> SKILLS </td>
+            <td> DATE OF JOIN </td>
+            <td> TOTAL EXPERIENCE </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="name">&nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+          </tr>
+          <tr>
+            <td id="name">&nbsp; </td>
+            <td>&nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+          </tr>
+          <tr>
+            <td id="name"> &nbsp; </td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+          </tr>
+          <tr>
+            <td id="name"> &nbsp; </td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp;</td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> 
+</body>
+</html>
